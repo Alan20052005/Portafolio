@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Diferencial Básico</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="Nexos.html">Nexos</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Cálculo Diferencial Básico</h1>
+        <p>El cálculo diferencial es una rama de las matemáticas que se centra en el estudio de cómo cambian las funciones. A continuación, presentamos algunos de los temas más fundamentales en el cálculo diferencial, junto con ejemplos sencillos.</p>
+
+        <h2 onclick="showImage('derivadas')">1. Derivadas</h2>
+        <p>La derivada de una función mide la tasa de cambio instantánea de la función con respecto a una de sus variables. Es una herramienta fundamental para el análisis de funciones.</p>
+        
+        <div class="example">
+            <h3>Ejemplo: Derivada de una función polinómica</h3>
+            <p>Sea la función \( f(x) = x^2 + 3x + 2 \). Su derivada es:</p>
+            <pre>f'(x) = 2x + 3</pre>
+        </div>
+
+        <h2 onclick="showImage('reglas')">2. Reglas de Derivación</h2>
+        <p>Las reglas de derivación son fórmulas que facilitan el cálculo de derivadas. Algunas de las más comunes incluyen:</p>
+        <ul>
+            <li><strong>Regla de la Potencia:</strong> Si \( f(x) = x^n \), entonces \( f'(x) = nx^{n-1} \).</li>
+            <li><strong>Regla del Producto:</strong> Si \( f(x) = u(x) \cdot v(x) \), entonces \( f'(x) = u'(x) \cdot v(x) + u(x) \cdot v'(x) \).</li>
+            <li><strong>Regla del Cociente:</strong> Si \( f(x) = \frac{u(x)}{v(x)} \), entonces \( f'(x) = \frac{u'(x) \cdot v(x) - u(x) \cdot v'(x)}{[v(x)]^2} \).</li>
+        </ul>
+
+        <div class="example">
+            <h3>Ejemplo: Derivada usando la regla de la potencia</h3>
+            <p>Sea \( f(x) = x^5 \). Usando la regla de la potencia:</p>
+            <pre>f'(x) = 5x^4</pre>
+        </div>
+
+        <h2 onclick="showImage('trigonometria')">3. Derivada de Funciones Trigonométricas</h2>
+        <p>Las funciones trigonométricas también tienen derivadas específicas. Por ejemplo:</p>
+        <ul>
+            <li>\( \frac{d}{dx} \sin(x) = \cos(x) \)</li>
+            <li>\( \frac{d}{dx} \cos(x) = -\sin(x) \)</li>
+            <li>\( \frac{d}{dx} \tan(x) = \sec^2(x) \)</li>
+        </ul>
+
+        <div class="example">
+            <h3>Ejemplo: Derivada de \( \sin(x) \)</h3>
+            <p>Sea \( f(x) = \sin(x) \). Su derivada es:</p>
+            <pre>f'(x) = \cos(x)</pre>
+        </div>
+
+        <h2 onclick="showImage('aplicaciones')">4. Aplicaciones de las Derivadas</h2>
+        <p>Las derivadas tienen muchas aplicaciones prácticas, como encontrar máximos y mínimos de funciones, estudiar la concavidad de gráficas, y resolver problemas de optimización.</p>
+
+        <div class="example">
+            <h3>Ejemplo: Encontrar el máximo de una función</h3>
+            <p>Sea \( f(x) = -2x^2 + 4x + 1 \). Para encontrar el máximo, hallamos la derivada y la igualamos a cero:</p>
+            <pre>f'(x) = -4x + 4</pre>
+            <p>Igualando a cero y resolviendo:</p>
+            <pre>-4x + 4 = 0
+x = 1</pre>
+            <p>El máximo ocurre en \( x = 1 \).</p>
+        </div>
+
+        <div class="image-container">
+            <img id="derivadas" src="imagenes/Derivadas1.jpg" alt="Derivadas" style="display:none;">
+            <img id="reglas" src="imagenes/Reglas.png" alt="Reglas de Derivación" style="display:none;">
+            <img id="trigonometria" src="imagenes/Trigonometrica.j
